@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f8ff;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.message-box {
+  width: 30%;
+  background-color: #e6f7ff;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.message-box p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.content {
+  width: 70%;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #4a6fa5;
+  margin-bottom: 30px;
+}
+
+.flower-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #3a5a80;
+}
+
+#flower-container {
+  height: 300px;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.flower-part {
+  position: absolute;
+}
+
+/* Rose */
+.rose-center {
+  width: 30px;
+  height: 30px;
+  background-color: #b8d400;
+  border-radius: 50%;
+}
+
+.rose-petal {
+  width: 40px;
+  height: 60px;
+  background-color: #A52A2A;
+  border-radius: 50% 50% 0 50%;
+}
+
+/* Tulip */
+.tulip-petal {
+  width: 60px;
+  height: 100px;
+  background: linear-gradient(to bottom, #A52A2A, #A52A2A);
+  border-radius: 60% 60% 40% 40%;
+  box-shadow: inset 0px -10px 20px rgba(0,0,0,0.1);
+  transform-origin: bottom center;
+}
+.tulip-center {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.sunflower-center {
+  width: 70px;
+  height: 70px;
+  background-color: #5c3a00; /* rich dark brown */
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  position: absolute;
+  top: 63.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.sunflower-petal {
+  width: 20px;
+  height: 80px;
+  background-color: #FFD700; /* sunflower yellow */
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  transform-origin: bottom center;
+  z-index: 1;
+}

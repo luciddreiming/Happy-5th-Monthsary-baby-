@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Generator</title>
+    <link rel="stylesheet" href="baby.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message-box">
+            <p id="dynamic-message">Hello, babyyy!!! Pili ka na lang ng gusto mong flowers hehe. Di nga lang accurate yan T_T.</p>
+        </div>
+        <div class="content" id="content-area">
+            <div id="selection-page">
+                <h1>Here sa tatlo</h1>
+                <div class="flower-options">
+                    <button onclick="selectFlower('rose')">Rose(not accurate)</button>
+                    <button onclick="selectFlower('tulip')">Tulip(not accurate)</button>
+                    <button onclick="selectFlower('normal')">Sunflower</button>
+                </div>
+            </div>
+
+            <div id="flower-page" style="display: none;">
+                <h1>Your <span id="flower-type-display"></span></h1>
+                <div id="flower-container"></div>
+                <button id="next-button">Next mo lang po, baby</button>
+            </div>
+        </div>
+    </div>
+    <script src="baby.js"></script>
+</body>
+</html>
